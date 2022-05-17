@@ -3,6 +3,10 @@
     <keyboard-shortcut first-keystroke="ctrl alt r" />
     <keyboard-shortcut first-keystroke="meta f1" />
   </action>
+  <action id="DBNavigator.Actions.Execute">
+    <keyboard-shortcut first-keystroke="meta 1" />
+    <keyboard-shortcut first-keystroke="meta 2" />
+  </action>
   <action id="ExecuteInPyConsoleAction">
     <keyboard-shortcut first-keystroke="meta 1" />
     <keyboard-shortcut first-keystroke="meta 2" />
