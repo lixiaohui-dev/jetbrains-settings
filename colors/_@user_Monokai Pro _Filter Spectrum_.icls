@@ -1,14 +1,11 @@
 <scheme name="_@user_Monokai Pro (Filter Spectrum)" version="142" parent_scheme="Darcula">
-  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="created">2022-05-14T16:51:54</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2021.3.2.0.0</property>
-    <property name="modified">2022-05-27T23:55:40</property>
+    <property name="modified">2022-05-28T16:50:55</property>
     <property name="originalScheme">Monokai Pro (Filter Spectrum)</property>
   </metaInfo>
-  <option name="CONSOLE_FONT_NAME" value="Menlo" />
-  <option name="CONSOLE_LINE_SPACING" value="1.2" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="7bd88f" />
     <option name="ANNOTATIONS_COLOR" value="fffbf7" />
