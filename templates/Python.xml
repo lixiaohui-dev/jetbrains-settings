@@ -1,0 +1,17 @@
+<templateSet group="Python">
+  <template name="spider" value="import requests&#10;import json&#10;&#10;&#10;def get_item(url, page):&#10;    url = ''&#10;    page = 1&#10;    # payload = {&#10;    # }&#10;    headers = {&#10;&#10;    }&#10;    resp = requests.get(url, headers = headers)&#10;    # resp = requests.post(url, headers = headers, data = payload)&#10;&#10;    if resp.status_code == 200:&#10;        print(f'[info]爬取 {page} 成功!')&#10;    else:&#10;        print('[error]爬取 {page} 失败，查看下面服务器返回信息')&#10;        print(resp.text)&#10;        quit()&#10;&#10;    return json.loads(resp.text)&#10;&#10;def parse(j):&#10;    item = j['']&#10;    item2 = j['']&#10;    item3 = j['']&#10;    return [item1, item2, item3]&#10;&#10;&#10;def get_items(url, page):&#10;    url = ''&#10;    page = ''&#10;    # payload = {&#10;    # }&#10;    pages = pages&#10;    results = []&#10;    for i in range(1, pages + 1):&#10;        &#10;        j = get_item(url, i)&#10;        &quot;&quot;&quot; 对返回数据（dict）的操作 &quot;&quot;&quot;&#10;        info = parse(j)&#10;        results.append(info)&#10;&#10;    return results&#10;&#10;" description="request spider" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="file" value="import pandas as pd&#10;import numpy as np&#10;&#10;file_path = ''&#10;data = pd.read_excel(file_path, sheet_name = None)" description="read xlsx files using pandas" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="save" value="data.to_excel(file_path, sheet_name = '', encoding = 'utf-8', index = False)" description="save dataframe to xlsx file" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>
